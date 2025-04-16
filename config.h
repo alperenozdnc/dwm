@@ -12,11 +12,11 @@ static const char *fonts[] = {"Hack Nerd Font:size=10"};
 static const char dmenufont[] = "Hack Nerd Font:size=10";
 static unsigned int baralpha = 0xd0;
 static unsigned int borderalpha = 1;
-static const char col_gray1[] = "#222222";
+static const char col_gray1[] = "#24283b";
 static const char col_gray2[] = "#444444";
-static const char col_gray3[] = "#bbbbbb";
-static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#005577";
+static const char col_gray3[] = "#a9b1d6";
+static const char col_gray4[] = "#c0caf5";
+static const char col_cyan[] = "#3d59a1";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},
@@ -24,7 +24,7 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+static const char *tags[] = {"", "", "", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
     /* xprop(1):
