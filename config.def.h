@@ -77,12 +77,13 @@ static char dmenumon[2] =
 static const char *dmenucmd[] = {
     "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
+static const char *roficmd[] = {"rofi", "-show", "combi", NULL};
 static const char *termcmd[] = {"alacritty", NULL};
 static const char *browsercmd[] = {"firefox", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
-    {MODKEY, XK_p, spawn, {.v = dmenucmd}},
+    {MODKEY, XK_p, spawn, {.v = roficmd}},
     {MODKEY | ShiftMask, XK_Return, spawn, {.v = termcmd}},
     {MODKEY | ShiftMask, XK_b, spawn, {.v = browsercmd}},
     {MODKEY, XK_b, togglebar, {0}},
